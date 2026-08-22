@@ -975,3 +975,145 @@ footer {
     }
 
 }
+
+/* ==============================
+   CATÁLOGO DE TALLERES
+============================== */
+
+.catalogo-talleres {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 30px;
+
+}
+
+
+.taller-card {
+
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.taller-card-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+
+.cupo {
+
+    color: #555555;
+
+    font-size: 14px;
+
+}
+
+
+.taller-card h2 {
+
+    color: #003b70;
+
+    font-size: 26px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.taller-descripcion {
+
+    color: #555555;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+.taller-info {
+
+    border-top:
+        1px solid #e0e0e0;
+
+    border-bottom:
+        1px solid #e0e0e0;
+
+    padding: 15px 0;
+
+    margin-bottom: 25px;
+
+}
+
+
+.taller-info p {
+
+    margin: 8px 0;
+
+    color: #555555;
+
+}
+
+
+/* ==============================
+   LLAMADO A LA ACCIÓN
+============================== */
+
+.llamada-accion {
+
+    text-align: center;
+
+}
+
+
+.llamada-accion h2 {
+
+    color: #003b70;
+
+    margin-bottom: 15px;
+
+}
+
+
+.llamada-accion p {
+
+    color: #555555;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ==============================
+   RESPONSIVE - TALLERES
+============================== */
+
+@media (max-width: 800px) {
+
+    .catalogo-talleres {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
