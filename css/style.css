@@ -1117,3 +1117,152 @@ footer {
     }
 
 }
+
+/* ==============================
+   FORMULARIO DE REGISTRO
+============================== */
+
+.formulario-container {
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    background-color: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.campo {
+
+    margin-bottom: 25px;
+
+}
+
+
+.campo label {
+
+    display: block;
+
+    color: #003b70;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+}
+
+
+.campo label span {
+
+    color: #777777;
+
+    font-weight: normal;
+
+    font-size: 14px;
+
+}
+
+
+.campo input,
+.campo select,
+.campo textarea {
+
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 5px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    color: #333333;
+
+    background-color: #ffffff;
+
+}
+
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+
+    outline: none;
+
+    border-color: #003b70;
+
+}
+
+
+.campo textarea {
+
+    resize: vertical;
+
+}
+
+
+.mensaje-error {
+
+    display: block;
+
+    margin-top: 6px;
+
+    color: #c62828;
+
+    font-size: 14px;
+
+}
+
+
+.formulario-boton {
+
+    text-align: center;
+
+    margin-top: 30px;
+
+}
+
+
+.formulario-boton .btn {
+
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+.formulario-boton .btn:hover {
+
+    background-color: #00264a;
+
+}
+
+
+/* ==============================
+   RESPONSIVE - FORMULARIO
+============================== */
+
+@media (max-width: 600px) {
+
+    .formulario-container {
+
+        padding: 25px 20px;
+
+    }
+
+}
