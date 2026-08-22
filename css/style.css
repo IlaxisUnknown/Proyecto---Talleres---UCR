@@ -1,0 +1,603 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+============================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #ffffff;
+
+    color: #333333;
+
+}
+
+
+/* ==============================
+   NAVEGACIÓN
+============================== */
+
+header {
+
+    background-color: #003b70;
+
+}
+
+
+.navbar {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 20px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.logo a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+}
+
+
+.menu {
+
+    list-style: none;
+
+    display: flex;
+
+    gap: 25px;
+
+}
+
+
+.menu a {
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+}
+
+
+.menu a:hover {
+
+    color: #d4a017;
+
+}
+
+
+.menu .activo {
+
+    border-bottom: 2px solid #d4a017;
+
+    padding-bottom: 5px;
+
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.hero {
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.95),
+            rgba(240, 244, 248, 0.95)
+        );
+
+}
+
+
+.hero-overlay {
+
+    width: 100%;
+
+    padding: 80px 20px;
+
+}
+
+
+.hero-content {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+
+.saludo {
+
+    color: #003b70;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+
+}
+
+
+.hero h1 {
+
+    color: #003b70;
+
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+}
+
+
+.descripcion-hero {
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    color: #555555;
+
+    max-width: 700px;
+
+    margin: auto;
+
+}
+
+
+/* ==============================
+   BOTONES
+============================== */
+
+.hero-botones {
+
+    margin-top: 35px;
+
+}
+
+
+.btn {
+
+    display: inline-block;
+
+    background-color: #003b70;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 5px;
+
+    margin: 5px;
+
+    transition: 0.3s;
+
+}
+
+
+.btn:hover {
+
+    background-color: #00264a;
+
+    transform: translateY(-2px);
+
+}
+
+
+.btn-secundario {
+
+    background-color: #d4a017;
+
+}
+
+
+.btn-secundario:hover {
+
+    background-color: #b8860b;
+
+}
+
+
+/* ==============================
+   SECCIONES GENERALES
+============================== */
+
+.section {
+
+    padding: 80px 30px;
+
+}
+
+
+.section-gray {
+
+    background-color: #f3f5f7;
+
+}
+
+
+.contenedor {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+.titulo-seccion {
+
+    text-align: center;
+
+    color: #003b70;
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.subtitulo-seccion {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    line-height: 1.6;
+
+    color: #666666;
+
+}
+
+
+/* ==============================
+   BENEFICIOS
+============================== */
+
+.beneficios-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.beneficio {
+
+    background-color: #ffffff;
+
+    width: 100%;
+
+    max-width: 350px;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.beneficio h3 {
+
+    color: #003b70;
+
+    margin-bottom: 15px;
+
+}
+
+
+.beneficio p {
+
+    line-height: 1.6;
+
+    color: #555555;
+
+}
+
+
+/* ==============================
+   TALLERES DESTACADOS
+============================== */
+
+.talleres-destacados {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+.taller {
+
+    background-color: #ffffff;
+
+    width: 100%;
+
+    max-width: 350px;
+
+    padding: 30px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 4px 12px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+.taller-categoria {
+
+    display: inline-block;
+
+    background-color: #e6eef5;
+
+    color: #003b70;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.taller h3 {
+
+    color: #003b70;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.taller p {
+
+    color: #555555;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+.btn-taller {
+
+    display: inline-block;
+
+    color: #003b70;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+.btn-taller:hover {
+
+    text-decoration: underline;
+
+}
+
+
+.ver-talleres {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+
+    background-color: #003b70;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+}
+
+
+.footer-container {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+}
+
+
+.footer-container p {
+
+    margin: 5px 0;
+
+    color: #d9e3ec;
+
+}
+
+
+/* ==============================
+   DISEÑO RESPONSIVO
+============================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
+
+    .menu {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .beneficios-container,
+    .talleres-destacados {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 40px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 20px;
+
+    }
+
+
+    .menu {
+
+        gap: 15px;
+
+    }
+
+
+    .menu a {
+
+        font-size: 14px;
+
+    }
+
+
+    .hero {
+
+        min-height: 500px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 32px;
+
+    }
+
+
+    .descripcion-hero {
+
+        font-size: 17px;
+
+    }
+
+
+    .section {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .titulo-seccion {
+
+        font-size: 28px;
+
+    }
+
+}
