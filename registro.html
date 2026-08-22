@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>UCR Workshops | Registro</title>
+
+    <!-- Importando CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAVEGACIÓN -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <a href="index.html">
+                    UCR Workshops
+                </a>
+
+            </div>
+
+
+            <ul class="menu">
+
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        Nosotros
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Servicios
+                    </a>
+                </li>
+
+                <li>
+                    <a href="talleres.html">
+                        Talleres
+                    </a>
+                </li>
+
+                <li>
+                    <a href="registro.html" class="activo">
+                        Registro
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- CONTENIDO PRINCIPAL  -->
+
+    <main>
+
+
+        <!-- ENCABEZADO -->
+
+        <section class="page-header">
+
+            <div class="contenedor">
+
+                <p class="saludo">
+                    Inscripción a talleres
+                </p>
+
+                <h1>
+                    Registro
+                </h1>
+
+                <p class="page-description">
+
+                    Completa el siguiente formulario
+                    para inscribirte en uno de nuestros
+                    talleres.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FORMULARIO DE REGISTRO -->
+
+        <section class="section">
+
+            <div class="contenedor">
+
+                <div class="formulario-container">
+
+                    <form id="formRegistro" novalidate>
+
+                                <!-- NOMBRE -->
+
+                                <div class="campo">
+
+                                    <label for="nombre">
+                                        Nombre
+                                    </label>
+
+                                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+
+                                    <small class="mensaje-error" id="errorNombre"></small>
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="apellidos">
+                                        Apellidos
+                                    </label>
+
+                                    <input type="text" id="apellidos" name="apellidos"
+                                        placeholder="Escribe tus apellidos">
+
+                                    <small class="mensaje-error" id="errorApellidos"></small>
+
+                                </div>
+
+                                <!-- CORREO -->
+
+                                <div class="campo">
+
+                                    <label for="correo">
+                                        Correo electrónico
+                                    </label>
+
+                                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+                                    <small class="mensaje-error" id="errorCorreo"></small>
+
+                                </div>
+
+
+                                <!-- TELÉFONO -->
+
+                                <div class="campo">
+
+                                    <label for="telefono">
+                                        Teléfono
+                                    </label>
+
+                                    <input type="tel" id="telefono" name="telefono" placeholder="8888-8888">
+
+                                    <small class="mensaje-error" id="errorTelefono"></small>
+
+                                </div>
+
+
+
+                                <!-- TALLER -->
+
+                                <div class="campo">
+
+                                    <label for="taller">
+                                        Selecciona un taller
+                                    </label>
+
+                                    <select id="taller" name="taller">
+
+                                        <option value="">
+                                            Selecciona una opción
+                                        </option>
+
+                                        <option value="desarrollo-web">
+                                            Desarrollo Web
+                                        </option>
+
+                                        <option value="fundamentos-redes">
+                                            Fundamentos de Redes
+                                        </option>
+
+                                        <option value="herramientas-digitales">
+                                            Herramientas Digitales
+                                        </option>
+
+                                        <option value="comunicacion-efectiva">
+                                            Comunicación Efectiva
+                                        </option>
+
+                                    </select>
+
+                                    <small class="mensaje-error" id="errorTaller"></small>
+
+                                </div>
+
+
+
+                                <!-- COMENTARIO -->
+
+                                <div class="campo">
+
+                                    <label for="comentario">
+                                        Comentario
+                                        <span>(opcional)</span>
+                                    </label>
+
+                                    <textarea id="comentario" name="comentario" rows="5"
+                                        placeholder="Escribe algún comentario si lo deseas"></textarea>
+
+                                </div>
+
+                                <div class="campo">
+
+                                    <label for="fecha">
+                                        Fecha de inscripción
+                                    </label>
+
+                                    <input type="date" id="fecha" name="fecha">
+
+                                    <small class="mensaje-error" id="errorFecha"></small>
+
+                                </div>
+
+
+
+                                <!-- BOTÓN -->
+
+                                <div class="formulario-boton">
+
+                                    <button type="submit" class="btn">
+                                        Registrarme
+                                    </button>
+
+                                </div>
+
+
+                            </form>
+
+                        </div>
+
+                </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <p>
+
+                ©
+                <span id="anio"></span>
+                UCR Workshops. Todos los derechos reservados.
+
+            </p>
+
+            <p>
+
+                Plataforma para la inscripción a talleres universitarios.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- EMAILJS -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script>
+
+        emailjs.init({
+            publicKey: "i8CdLHRgGQ-E4YHzV"
+        });
+
+    </script>
+
+
+    <!-- JAVASCRIPT DEL PROYECTO -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
